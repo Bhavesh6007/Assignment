@@ -1,0 +1,67 @@
+Q : Explain Life cycle in Class Component and functional component with Hooks
+Ans:
+React components go through a lifecycle of mounting, updating, and unmounting. Lifecycle methods are functions that are called at specific points during a component's lifecycle. 
+They can be used to perform tasks such as fetching data, setting up subscriptions, and cleaning up resources.
+Class components have a number of built-in lifecycle methods, including:
+
+constructor(): This method is called when the component is first created.
+
+componentDidMount(): This method is called after the component has been inserted into the DOM.
+
+componentDidUpdate(): This method is called after the component has been updated.
+
+componentWillUnmount(): This method is called before the component is removed from the DOM.
+
+Functional components do not have built-in lifecycle methods. However, they can use React hooks to achieve similar functionality.
+
+There are a number of hooks that can be used to manage the lifecycle of a functional component, including:
+
+useState(): This hook allows you to manage the state of a functional component.
+
+useEffect(): This hook allows you to perform side effects in a functional component.
+
+useLayoutEffect(): This hook is similar to useEffect(), but it is guaranteed to run after the component has been rendered.
+useMemo(): This hook allows you to memoize a value so that it is only recalculated when its dependencies change.
+
+`useCallback()`: This hook allows you to memoize a callback function so that it is only recreated when its dependencies change.
+
+The following is an example of a class component that uses lifecycle methods.
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  componentDidMount() {
+    // Fetch data
+  }
+
+  componentDidUpdate() {
+    // Update the DOM
+  }
+
+  componentWillUnmount() {
+    // Clean up resources
+  }
+
+  render() {
+    return <div>{this.state.count}</div>;
+  }
+}
+
+
+The following is an example of a functional component that uses hooks to manage its lifecycle:
+import React, { useState, useEffect } from 'react';
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // Fetch data
+  }, []);
+
+  useEffect(() => {
+    // Update the DOM
+  }, [count]);
+
+  return <div>{count}</div>;
+}
