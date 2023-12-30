@@ -1,0 +1,20 @@
+Q : What is JavaScript Output method?
+ans:
+1) Using the console.log() function
+2) Using the window.alert() function
+3) Using the innerHTML property.
+4) Using the document.write() function.
+
+Q : How to used JavaScript Output method?
+Ans:
+1)console.log("Hello React hi am Bhavesh Parmar");
+2) window.alert("Fill the detail in CAPITAL LETTER");
+3)document.write("Hello World").
+
+
+Q :How to used JavaScript Events to do all examples?
+Ans:
+ 1)Click events: when user click button some action to be performed.
+2)Mouse event :when events are fired when the user moves the mouse over an element.
+3 ) Keyboard events: These events are fired when the user presses or releases a key on the keyboard.
+4) Form events: These events are fired when the user interacts with a form element, such as submitting a form or changing the value of a text field.
